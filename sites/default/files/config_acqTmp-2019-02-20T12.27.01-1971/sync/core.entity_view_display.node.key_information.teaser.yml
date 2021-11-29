@@ -1,0 +1,31 @@
+uuid: dc1e2be2-2c75-40a3-965e-8086b78024a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.key_information.body
+    - field.field.node.key_information.field_image_large_key
+    - field.field.node.key_information.field_image_small_key
+    - node.type.key_information
+  module:
+    - image
+    - user
+id: node.key_information.teaser
+targetEntityType: node
+bundle: key_information
+mode: teaser
+content:
+  field_image_small_key:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image_large_key: true
+  links: true

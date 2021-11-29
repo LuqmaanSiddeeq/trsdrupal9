@@ -1,0 +1,8 @@
+uuid: 266066b3-089b-48af-8eea-d2c844291580
+langcode: en
+status: true
+dependencies: {  }
+id: families
+label: Families
+description: 'Sidebar menu'
+locked: false

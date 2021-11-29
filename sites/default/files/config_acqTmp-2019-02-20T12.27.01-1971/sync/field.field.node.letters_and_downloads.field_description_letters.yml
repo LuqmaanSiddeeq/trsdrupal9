@@ -1,0 +1,19 @@
+uuid: a8a969ea-76ee-42dd-b7d2-5b669d749ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_letters
+    - node.type.letters_and_downloads
+id: node.letters_and_downloads.field_description_letters
+field_name: field_description_letters
+entity_type: node
+bundle: letters_and_downloads
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

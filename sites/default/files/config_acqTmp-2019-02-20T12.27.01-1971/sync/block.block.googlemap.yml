@@ -1,0 +1,29 @@
+uuid: 0f0fb3b1-9473-4765-a68a-dc91fe442f55
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4b417943-7229-4577-879c-57f95475dd77'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: googlemap
+theme: gavias_edmix
+region: footer_four
+weight: -13
+provider: null
+plugin: 'block_content:4b417943-7229-4577-879c-57f95475dd77'
+settings:
+  id: 'block_content:4b417943-7229-4577-879c-57f95475dd77'
+  label: 'Google Map'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,17 @@
+{% if view_mode == 'teaser' %} 
+  
+{% elseif view_mode == 'teaser_2' %}
+
+  <div class="team-block team-teaser-2">
+    <div class="team-image">
+      {{ content.field_image_small_teaching_staff }}      
+    </div>
+    <div class="team-content">
+      <div class="team-name">{{ label }}</div>  
+      <div class="team-job">{{ content.field_position_teaching_staff }}</div>
+    </div>
+  </div> 
+
+{% else %}
+
+{% endif %}

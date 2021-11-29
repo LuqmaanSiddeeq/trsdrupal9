@@ -1,0 +1,20 @@
+uuid: bffbd11a-ec61-4ad9-80c2-9cdb2ca219fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_type_teaching_staff
+field_name: field_type_teaching_staff
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

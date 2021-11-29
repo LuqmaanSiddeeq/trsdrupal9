@@ -1,0 +1,9 @@
+uuid: 8449b6e7-828e-47b9-b4db-62be0795c8f8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Key information'
+vid: key_information
+description: 'Used in ''Key information'' content type.'
+hierarchy: 0
+weight: 0

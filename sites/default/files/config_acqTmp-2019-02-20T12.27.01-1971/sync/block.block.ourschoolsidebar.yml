@@ -1,0 +1,33 @@
+uuid: c6951892-a66b-4fec-85e6-3fc052ade859
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.our-school-sidebar
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: ourschoolsidebar
+theme: gavias_edmix
+region: sidebar_right
+weight: -11
+provider: null
+plugin: 'system_menu_block:our-school-sidebar'
+settings:
+  id: 'system_menu_block:our-school-sidebar'
+  label: 'Our school'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/our-school\r\n/our-school/about-us\r\n/our-school/headteachers-message\r\n/our-school/vision-values-and-ethos\r\n/our-school/key-people\r\n/our-school/governance\r\n/our-school/ambitious-schools-trust\r\n/our-school/work-with-us\r\n/our-school/work-with-us/*"
+    negate: false
+    context_mapping: {  }

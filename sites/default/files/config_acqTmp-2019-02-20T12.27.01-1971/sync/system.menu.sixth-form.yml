@@ -1,0 +1,8 @@
+uuid: 97f93b00-dc44-4f5a-b346-eedab3805c42
+langcode: en
+status: true
+dependencies: {  }
+id: sixth-form
+label: 'Sixth form'
+description: 'Sidebar menu'
+locked: false

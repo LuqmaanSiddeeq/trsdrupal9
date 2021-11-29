@@ -1,0 +1,9 @@
+uuid: b9be1ce2-d9bd-4b7a-aeed-13cf5e30b4ab
+langcode: en
+status: true
+dependencies: {  }
+name: Staff
+vid: staff
+description: 'Used in ''Teaching Staff'' content type.'
+hierarchy: 0
+weight: 0

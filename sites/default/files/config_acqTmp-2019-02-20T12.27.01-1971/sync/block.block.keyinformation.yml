@@ -1,0 +1,33 @@
+uuid: 65d063f7-cf09-401a-8338-d6fa11de8aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.key-information
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: keyinformation
+theme: gavias_edmix
+region: sidebar_right
+weight: -7
+provider: null
+plugin: 'system_menu_block:key-information'
+settings:
+  id: 'system_menu_block:key-information'
+  label: 'Key information'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/key-information\r\n/key-information/*"
+    negate: false
+    context_mapping: {  }

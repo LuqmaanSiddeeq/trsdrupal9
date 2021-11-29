@@ -1,0 +1,22 @@
+uuid: 31c75612-e1f7-4cb8-96a5-d3f6bbf72adf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: key_information
+label: 'Key information'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  f7a97d51-58b1-45b0-9a4e-5c164371ae92:
+    id: node_type
+    bundles:
+      key_information: key_information
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f7a97d51-58b1-45b0-9a4e-5c164371ae92
+selection_logic: and
+weight: -5
+relationships: {  }

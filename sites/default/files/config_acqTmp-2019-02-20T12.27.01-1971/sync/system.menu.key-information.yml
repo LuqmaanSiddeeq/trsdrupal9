@@ -1,0 +1,8 @@
+uuid: 36092487-5db5-48c8-810f-8e7c40f0648f
+langcode: en
+status: true
+dependencies: {  }
+id: key-information
+label: 'Key information'
+description: 'Sidebar menu'
+locked: false

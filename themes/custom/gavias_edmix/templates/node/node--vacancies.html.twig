@@ -1,0 +1,48 @@
+{% if view_mode == 'teaser' %} 
+  
+{% elseif view_mode == 'teaser_2' %}
+
+  <div class="team-block team-teaser-2">
+    <div class="team-image">
+      {{ content.field_image_small_vacancies }}      
+    </div>
+    <div class="team-content">
+      <div class="team-name">{{ label }}</div>  
+      <div class="team-job"><a class="btn-theme" href="{{ url }}">Read more</a></div>
+      <!-- <div class="team-job"><a href="{{ url }}">Read More</a></div> -->
+    </div>
+  </div> 
+
+{% else %}
+
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class
+  ]
+%}
+
+<article{{ attributes.addClass(classes)|without('about') }}>
+  <div class="align-left style-default padding-bottom-30">{{ content.field_image_large_vacancies }}</div>
+  <header>
+    <div class="container">
+      <div class="widget gsc-heading align-left style-default padding-bottom-15">
+        <h2{{ title_attributes.addClass('node__title title') }}><span>{{ label }}</span></h2>
+        <div class="heading-line"><span class="one"></span><span class="second"></span><span class="three"></span></div>
+      </div>  
+    </div>
+  </header>
+  
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {{ content|without('field_image_small_vacancies', 'field_image_large_vacancies', 'label', 'comment') }}
+  </div>
+  <div style="padding-bottom:10">    
+  </div>
+</article>
+
+<!-- End Display article for detail page -->
+{% endif %}

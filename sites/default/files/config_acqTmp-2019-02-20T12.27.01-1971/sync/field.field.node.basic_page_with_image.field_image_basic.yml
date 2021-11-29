@@ -1,0 +1,38 @@
+uuid: 201fd8b5-579a-4297-a984-5644069e2b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_basic
+    - node.type.basic_page_with_image
+  module:
+    - image
+id: node.basic_page_with_image.field_image_basic
+field_name: field_image_basic
+entity_type: node
+bundle: basic_page_with_image
+label: Image
+description: '850 x 500 pixels'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: basic-page-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
