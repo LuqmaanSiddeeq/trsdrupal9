@@ -84,12 +84,12 @@ services:
       - '@current_user'
 
   simple_sitemap.path_processor.variant.in:
-    class: Drupal\simple_sitemap\PathProcessor\PathProcessorSitemapVariantIn
+    class: Drupal\simple_sitemap\PathProcessor\PathProcessorSitemapVariant
     tags:
       - { name: path_processor_inbound, priority: 300 }
 
   simple_sitemap.path_processor.variant.out:
-    class: Drupal\simple_sitemap\PathProcessor\PathProcessorSitemapVariantOut
+    class: Drupal\simple_sitemap\PathProcessor\PathProcessorSitemapVariant
     tags:
       - { name: path_processor_outbound, priority: 300 }
 
