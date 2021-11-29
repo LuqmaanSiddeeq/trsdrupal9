@@ -804,8 +804,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $databases['default']['default'] = array (
   'database' => 'bestsols_dev1',
-  'username' => 'root',
-  'password' => '',
+  'username' => 'bestsols_dev1',
+  'password' => 'wZ-r93%7SV.S',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
