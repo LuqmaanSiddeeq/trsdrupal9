@@ -803,7 +803,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'bestsols_dev1',
+  'database' => '',
   'username' => 'bestsols_dev1',
   'password' => 'wZ-r93%7SV.S',
   'prefix' => '',
@@ -813,4 +813,3 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_q6cicIz5nkMiSdJkhoohksyAjeId5CpfNNKMwlSeR9rUM1R68k-Hau6IDaHn5lXAuWn41WIFzQ/sync';
-
