@@ -1,0 +1,22 @@
+uuid: 3112cb0e-bd92-4f77-a9ff-b6371024c70a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: vacancies
+label: Vacancies
+type: 'canonical_entities:node'
+pattern: '/our-school/work-with-us/[node:title]'
+selection_criteria:
+  19f9b512-b9a5-4e57-b83d-6f84ff51e383:
+    id: node_type
+    bundles:
+      vacancies: vacancies
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 19f9b512-b9a5-4e57-b83d-6f84ff51e383
+selection_logic: and
+weight: -5
+relationships: {  }

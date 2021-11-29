@@ -1,0 +1,22 @@
+uuid: 8759713f-71dd-4bc8-82bf-178ebc9670bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: letters_and_downloads
+label: 'Letters and downloads'
+type: 'canonical_entities:node'
+pattern: '/families/letters-and-downloads/[node:title]'
+selection_criteria:
+  fe235891-e674-457b-929a-0764eac9fa61:
+    id: node_type
+    bundles:
+      letters_and_downloads: letters_and_downloads
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fe235891-e674-457b-929a-0764eac9fa61
+selection_logic: and
+weight: -5
+relationships: {  }

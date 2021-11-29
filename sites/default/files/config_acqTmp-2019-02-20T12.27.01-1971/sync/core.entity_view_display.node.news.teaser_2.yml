@@ -1,0 +1,29 @@
+uuid: cca0f94b-337f-413d-9989-3b8e59c6a912
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_2
+    - field.field.node.news.field_image_large_news
+    - field.field.node.news.field_image_small_news
+    - node.type.news
+  module:
+    - image
+    - user
+id: node.news.teaser_2
+targetEntityType: node
+bundle: news
+mode: teaser_2
+content:
+  field_image_small_news:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_image_large_news: true
+  links: true

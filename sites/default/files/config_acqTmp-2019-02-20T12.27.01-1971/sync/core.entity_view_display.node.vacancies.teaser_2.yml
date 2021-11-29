@@ -1,0 +1,31 @@
+uuid: 700db53e-cad2-40b7-b477-b95e36194d33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_2
+    - field.field.node.vacancies.body
+    - field.field.node.vacancies.field_image_large_vacancies
+    - field.field.node.vacancies.field_image_small_vacancies
+    - node.type.vacancies
+  module:
+    - image
+    - user
+id: node.vacancies.teaser_2
+targetEntityType: node
+bundle: vacancies
+mode: teaser_2
+content:
+  field_image_small_vacancies:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image_large_vacancies: true
+  links: true

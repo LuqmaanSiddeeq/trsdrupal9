@@ -1,0 +1,19 @@
+uuid: c055556f-f5ab-4649-9c4c-372d100ee3da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_teaching_staff
+    - node.type.teaching_staff
+id: node.teaching_staff.field_position_teaching_staff
+field_name: field_position_teaching_staff
+entity_type: node
+bundle: teaching_staff
+label: Position
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

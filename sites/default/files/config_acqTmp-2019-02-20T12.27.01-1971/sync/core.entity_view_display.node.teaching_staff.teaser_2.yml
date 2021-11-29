@@ -1,0 +1,42 @@
+uuid: 81cd401b-8543-4b19-b72c-d221fa1002b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_2
+    - field.field.node.teaching_staff.body
+    - field.field.node.teaching_staff.field_image_large_teaching_staff
+    - field.field.node.teaching_staff.field_image_small_teaching_staff
+    - field.field.node.teaching_staff.field_position_teaching_staff
+    - field.field.node.teaching_staff.field_type_teaching_staff
+    - node.type.teaching_staff
+  module:
+    - image
+    - user
+id: node.teaching_staff.teaser_2
+targetEntityType: node
+bundle: teaching_staff
+mode: teaser_2
+content:
+  field_image_small_teaching_staff:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_position_teaching_staff:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image_large_teaching_staff: true
+  field_type_teaching_staff: true
+  links: true

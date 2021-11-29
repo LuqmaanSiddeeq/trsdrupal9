@@ -1,0 +1,22 @@
+uuid: 497ce610-26e1-41a6-b8cf-4513c865d8f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.teaching_staff
+  module:
+    - text
+id: node.teaching_staff.body
+field_name: body
+entity_type: node
+bundle: teaching_staff
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

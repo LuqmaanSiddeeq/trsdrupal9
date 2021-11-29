@@ -1,0 +1,8 @@
+uuid: c1e7ff6b-c68c-4fec-aa85-fdb04b09bfd3
+langcode: en
+status: true
+dependencies: {  }
+id: our-school-sidebar
+label: 'Our school'
+description: 'Sidebar menu'
+locked: false

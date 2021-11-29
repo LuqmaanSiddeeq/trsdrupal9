@@ -1,0 +1,33 @@
+uuid: 3039f8e3-f321-4301-889f-6aae0f74ef3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sixth-form
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: sixthform
+theme: gavias_edmix
+region: sidebar_right
+weight: -4
+provider: null
+plugin: 'system_menu_block:sixth-form'
+settings:
+  id: 'system_menu_block:sixth-form'
+  label: 'Sixth form'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/sixth-form\r\n/sixth-form/*"
+    negate: false
+    context_mapping: {  }

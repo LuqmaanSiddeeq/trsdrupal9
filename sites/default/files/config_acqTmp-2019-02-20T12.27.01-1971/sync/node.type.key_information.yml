@@ -1,0 +1,17 @@
+uuid: 8ebff473-dc73-4de2-8bb1-c00eba1cebb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Key information'
+type: key_information
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: 46f23f4f-b3d6-424a-b3ad-59b5746d64c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c5d341d6-11e2-4bee-98cf-6b49bf0f8d54'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: logo
+theme: gavias_edmix
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:c5d341d6-11e2-4bee-98cf-6b49bf0f8d54'
+settings:
+  id: 'block_content:c5d341d6-11e2-4bee-98cf-6b49bf0f8d54'
+  label: 'The Rise School'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

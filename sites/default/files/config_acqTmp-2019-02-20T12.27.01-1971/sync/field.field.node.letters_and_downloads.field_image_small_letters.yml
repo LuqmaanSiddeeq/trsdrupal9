@@ -1,0 +1,38 @@
+uuid: e60db7b6-345d-4df6-a9a6-10f7d6ab3dd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_small_letters
+    - node.type.letters_and_downloads
+  module:
+    - image
+id: node.letters_and_downloads.field_image_small_letters
+field_name: field_image_small_letters
+entity_type: node
+bundle: letters_and_downloads
+label: 'Image (small)'
+description: '300 x 200 pixels'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: letters-and-downloads/image/small
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

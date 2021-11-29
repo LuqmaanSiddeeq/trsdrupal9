@@ -1,0 +1,27 @@
+uuid: 4daeb0e0-8128-40e0-bac8-e771bb131197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_letters
+    - node.type.letters_and_downloads
+  module:
+    - file
+id: node.letters_and_downloads.field_file_letters
+field_name: field_file_letters
+entity_type: node
+bundle: letters_and_downloads
+label: 'Upload file'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: letters-and-downloads/files
+  file_extensions: pdf
+  max_filesize: '2 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

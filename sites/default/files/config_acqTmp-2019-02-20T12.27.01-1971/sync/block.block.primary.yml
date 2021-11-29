@@ -1,0 +1,33 @@
+uuid: e86c0c71-6e09-4a95-9d07-f0e58d2677f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.primary
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: primary
+theme: gavias_edmix
+region: sidebar_right
+weight: -6
+provider: null
+plugin: 'system_menu_block:primary'
+settings:
+  id: 'system_menu_block:primary'
+  label: Primary
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/primary-school\r\n/primary-school/*"
+    negate: false
+    context_mapping: {  }

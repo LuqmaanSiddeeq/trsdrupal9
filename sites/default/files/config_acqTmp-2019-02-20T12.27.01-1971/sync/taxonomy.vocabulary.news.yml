@@ -1,0 +1,9 @@
+uuid: 9bfa8c8b-c5b5-4e14-8913-9d8b9ec091e5
+langcode: en
+status: true
+dependencies: {  }
+name: News
+vid: news
+description: 'Used in ''News'' content type.'
+hierarchy: 0
+weight: 0

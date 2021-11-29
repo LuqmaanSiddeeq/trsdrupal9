@@ -1,0 +1,36 @@
+uuid: 72f9d641-3ad1-4beb-9910-30eb88473828
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.letters_and_downloads.field_file_letters
+    - field.field.node.letters_and_downloads.field_image_small_letters
+    - node.type.letters_and_downloads
+  module:
+    - file
+    - image
+    - user
+id: node.letters_and_downloads.teaser
+targetEntityType: node
+bundle: letters_and_downloads
+mode: teaser
+content:
+  field_file_letters:
+    type: file_url_plain
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image_small_letters:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true

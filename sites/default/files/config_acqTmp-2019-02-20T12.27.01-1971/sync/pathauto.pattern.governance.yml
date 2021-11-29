@@ -1,0 +1,22 @@
+uuid: 72c2c4c3-e03d-42e6-8ad7-74a9e6773c24
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: governance
+label: Governance
+type: 'canonical_entities:node'
+pattern: '/our-school/governance/[node:title]'
+selection_criteria:
+  05cb35b3-3005-409c-bffb-ebf20bfdf478:
+    id: node_type
+    bundles:
+      team: team
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 05cb35b3-3005-409c-bffb-ebf20bfdf478
+selection_logic: and
+weight: -5
+relationships: {  }

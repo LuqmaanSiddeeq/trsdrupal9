@@ -1,0 +1,22 @@
+uuid: de9b2e4d-6cc8-4e7e-bc37-1f67c58e32c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: teaching_staff
+label: 'Teaching Staff'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  2240bb46-45c4-42d5-917e-c3fc9cce9f92:
+    id: node_type
+    bundles:
+      teaching_staff: teaching_staff
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2240bb46-45c4-42d5-917e-c3fc9cce9f92
+selection_logic: and
+weight: -5
+relationships: {  }

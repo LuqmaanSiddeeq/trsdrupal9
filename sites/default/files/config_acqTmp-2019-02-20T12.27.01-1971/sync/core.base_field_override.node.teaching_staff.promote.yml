@@ -1,0 +1,22 @@
+uuid: 2a3159e0-68f5-4930-a2fc-025db74341c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teaching_staff
+id: node.teaching_staff.promote
+field_name: promote
+entity_type: node
+bundle: teaching_staff
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

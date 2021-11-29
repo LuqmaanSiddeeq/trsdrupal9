@@ -1,0 +1,43 @@
+uuid: 0df7c1bd-a31a-4735-b868-889cddbe5dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.letters_and_downloads.field_description_letters
+    - field.field.node.letters_and_downloads.field_file_letters
+    - field.field.node.letters_and_downloads.field_image_small_letters
+    - node.type.letters_and_downloads
+  module:
+    - file
+    - image
+    - user
+id: node.letters_and_downloads.default
+targetEntityType: node
+bundle: letters_and_downloads
+mode: default
+content:
+  field_description_letters:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_file_letters:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_image_small_letters:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  links: true

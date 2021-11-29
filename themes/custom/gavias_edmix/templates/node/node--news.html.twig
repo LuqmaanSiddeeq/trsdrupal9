@@ -1,0 +1,47 @@
+{%
+  set classes = [
+    'node',
+    'node-detail',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+
+<!-- Start Display article for teaser page -->
+{% if teaser == true %} 
+  <!-- <div class="post-block">
+    <div class="post-image">
+      {{ content.field_image_small_news }}
+      <div class="post-categories"></div>
+    </div>
+    <div class="post-content text-left">
+      <div class="post-title"> <a href="{{ url }}" rel="bookmark">{{ label }}</a> </div>
+       <div class="post-body">{{ content.body }}</div>
+    </div>
+  </div> -->
+<!-- End Display article for teaser page -->
+{% else %}
+<!-- Start Display article for detail page -->
+
+<article{{ attributes.addClass(classes)|without('about') }}>
+  <div class="align-left style-default padding-bottom-30">{{ content.field_image_large_news }}</div>
+  <header>
+    <div class="container">
+      <div class="widget gsc-heading align-left style-default padding-bottom-15">
+        <h2{{ title_attributes.addClass('node__title title') }}><span>{{ label }}</span></h2>
+        <div class="heading-line"><span class="one"></span><span class="second"></span><span class="three"></span></div>
+      </div>  
+    </div>
+  </header>
+  
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {{ content|without('field_image_small_news', 'field_image_large_news', 'field_date_news', 'label', 'comment') }}
+  </div>
+</article>
+
+<!-- End Display article for detail page -->
+{% endif %}

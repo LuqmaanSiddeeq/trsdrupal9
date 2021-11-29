@@ -1,0 +1,30 @@
+uuid: 01a0a767-2264-46e5-a505-8f03132bbd73
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vacancies.body
+    - node.type.vacancies
+  module:
+    - text
+    - user
+id: node.vacancies.teaser
+targetEntityType: node
+bundle: vacancies
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

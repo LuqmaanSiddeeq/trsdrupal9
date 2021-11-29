@@ -1,0 +1,58 @@
+uuid: 147efba3-d4bd-459f-8f3a-e287313df200
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_gallery_images
+    - node.type.gallery
+  module:
+    - colorbox
+    - text
+    - user
+_core:
+  default_config_hash: PKk8bAUlRVE8C2W-tu5GQ3rqu6J7yYuwfNqP7KuDMiw
+id: node.gallery.teaser
+targetEntityType: node
+bundle: gallery
+mode: teaser
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_gallery_image:
+    type: colorbox
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+  field_gallery_images:
+    type: colorbox
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+hidden:
+  links: true

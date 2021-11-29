@@ -1,0 +1,34 @@
+uuid: 5f134aaa-c5c4-41bd-98c4-1e3877c5e335
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.teaching_staff.body
+    - field.field.node.teaching_staff.field_image_large_teaching_staff
+    - field.field.node.teaching_staff.field_image_small_teaching_staff
+    - node.type.teaching_staff
+  module:
+    - text
+    - user
+id: node.teaching_staff.teaser
+targetEntityType: node
+bundle: teaching_staff
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image_large_teaching_staff: true
+  field_image_small_teaching_staff: true

@@ -1,0 +1,33 @@
+uuid: 6291edaf-6e93-4c57-84f9-031f4156b736
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.families
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_edmix
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: families
+theme: gavias_edmix
+region: sidebar_right
+weight: -8
+provider: null
+plugin: 'system_menu_block:families'
+settings:
+  id: 'system_menu_block:families'
+  label: Families
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/families\r\n/families/*\r\n/node/49"
+    negate: false
+    context_mapping: {  }

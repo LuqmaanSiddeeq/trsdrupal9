@@ -1,0 +1,38 @@
+uuid: d385425c-5349-4f33-afd0-c093669dff0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_large_teaching_staff
+    - node.type.teaching_staff
+  module:
+    - image
+id: node.teaching_staff.field_image_large_teaching_staff
+field_name: field_image_large_teaching_staff
+entity_type: node
+bundle: teaching_staff
+label: 'Image (large)'
+description: '850 x 500 pixels'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: teaching-staff/large
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

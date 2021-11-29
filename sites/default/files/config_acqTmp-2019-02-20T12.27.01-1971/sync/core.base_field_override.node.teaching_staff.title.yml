@@ -1,0 +1,18 @@
+uuid: c01051bd-87e0-4861-a963-ba124dc7739f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teaching_staff
+id: node.teaching_staff.title
+field_name: title
+entity_type: node
+bundle: teaching_staff
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
