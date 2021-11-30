@@ -802,24 +802,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-
-$settings['container_yamls'][] = __DIR__ . '/services.yml';
-
-/**
- * Include the Pantheon-specific settings file.
- *
- * n.b. The settings.pantheon.php file makes some changes
- *      that affect all envrionments that this site
- *      exists in.  Always include this file, even in
- *      a local development environment, to insure that
- *      the site settings remain consistent.
- */
-include __DIR__ . "/settings.pantheon.php";
-
 $databases['default']['default'] = array (
-  'database' => 'trsdrupal',
-  'username' => 'root',
-  'password' => 'root',
+  'database' => 'bestsols_dev1',
+  'username' => 'bestsols_dev1',
+  'password' => 'wZ-r93%7SV.S',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
